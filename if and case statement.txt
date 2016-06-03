@@ -1,0 +1,36 @@
+IF [WORK_STATE] = "California"
+THEN "VIEW"
+ELSEIF [WORK_STATE] = "Washington"
+THEN "VIEW"
+ELSE "Don''t View"
+END
+
+
+
+IF [WORK_STATE] = "California"
+OR [WORK_STATE] = "Washington"
+OR [WORK_STATE] = "Texas"
+OR [WORK_STATE] = "Alabama"
+OR [WORK_STATE] = "North Carolina"
+OR [WORK_STATE] = "New York"
+OR [WORK_STATE] = "Maine"
+OR [WORK_STATE] = "Massachusetts"
+THEN "VIEW"
+ELSE "Don''t View"
+END
+
+
+CASE [WORK_STATE] WHEN "California"
+THEN "View"
+WHEN "New York"
+THEN "View"
+ELSE "Don''t View"
+END
+
+
+IF [Diff paid and prevailing wage] <0
+THEN "Under Paid"
+ELSEIF [Diff paid and prevailing wage] =0
+THEN "Evenly Paid"
+ELSE "Over Paid"
+END
